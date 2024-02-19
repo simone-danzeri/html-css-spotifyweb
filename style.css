@@ -23,11 +23,17 @@
 ---------------*/
 
 main{
+    max-width: 1440px;
     height: calc(100vh - 90px);
 }
 
 .main-container{
+    width: 100%;
     display: flex;
+}
+
+.wrap{
+    width: 100%;
 }
 
 /*---------------
@@ -140,10 +146,27 @@ aside{
 .user span{
     padding-left: 12px;
 }
+
 /*---------------
     WRAP
 ---------------*/
 
+#upgrade{
+    width: 100%;
+    background-color: #080b12;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#upgrade button{
+    padding: 15px 40px;
+    background-color: inherit;
+    border: 1px solid white;
+    border-radius: 25px;
+}
 
 
 /*---------------
