@@ -27,7 +27,6 @@ main{
 }
 
 .main-container{
-    /* width: 100%; */
     display: flex;
 }
 
@@ -154,7 +153,6 @@ aside{
 ---------------*/
 
 #upgrade{
-    /* width: 100%; */
     background-color: #080b12;
     padding-top: 20px;
     padding-bottom: 30px;
@@ -175,25 +173,24 @@ aside{
 ---------------*/
 
 #front-page{
-    /* width: 100%; */
     background-color: #141922;
 }
 
-#front-page ul{
+/* .genre ul{
     display: flex;
     justify-content: center;
     list-style: none;
-}
-#front-page ul li{
+} */
+
+/* #front-page ul li{
     font-size: 14px;
     padding: 20px 15px;
-}
+} */
 
 /*---------------
     FOOTER
 ---------------*/
 footer{
-    max-width: 1440px;
     height: 90px;
     background-color: #282828;
 }
