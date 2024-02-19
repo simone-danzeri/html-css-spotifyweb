@@ -173,6 +173,7 @@ aside{
 ---------------*/
 
 #front-page{
+    display: flex;
     background-color: #141922;
 }
 
