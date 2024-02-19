@@ -45,7 +45,7 @@ aside{
     padding: 20px;
     height: calc(100vh - 90px);
     overflow-y: hidden;
-    /* width: 500px; */
+    /* width: 300px; */
 }
 
 .aside-container{
@@ -53,6 +53,7 @@ aside{
     flex-direction: column;
     height: 100%;
     justify-content: space-between;
+    padding-right: 50px;
 }
 
 .small-logo{
@@ -62,7 +63,6 @@ aside{
 
 .big-logo{
     width: 100%;
-    
 }
 
 .home-list{
@@ -72,6 +72,7 @@ aside{
 .home-list ul{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .home-list span{
@@ -168,11 +169,33 @@ aside{
     border-radius: 25px;
 }
 
+/*---------------
+    FRONT PAGE
+---------------*/
+
+#front-page{
+    width: 100%;
+    background-color: #141922;
+}
+
+#front-page ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+#front-page ul li{
+    font-size: 14px;
+    padding: 20px 15px;
+}
 
 /*---------------
     FOOTER
 ---------------*/
-
+footer{
+    max-width: 1440px;
+    height: 90px;
+    background-color: #282828;
+}
 /*---------------
     RESPONSIVE
 ---------------*/
