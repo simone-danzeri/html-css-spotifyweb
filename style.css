@@ -6,3 +6,64 @@
     margin: 0;
     padding: 0;
 }
+
+/*---------------
+    MAIN
+---------------*/
+
+main{
+    height: calc(100vh - 90px);
+}
+
+.main-container{
+    display: flex;
+}
+
+/*---------------
+    ASIDE
+---------------*/
+
+aside{
+    background-color: black;
+    padding: 20px;
+    width: 500px;
+}
+
+.logo img{
+    width: 40%;
+    
+}
+
+.home-list{
+    padding-top: 30px;
+}
+
+.home-list ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-list span{
+    color: #fff;
+    padding-left: 10px;
+}
+
+.home-list ul li{
+    display: flex;
+    align-items: center;
+}
+
+.home-list img{
+    width: 7%;
+}
+
+/*---------------
+    WRAP
+---------------*/
+
+
+
+/*---------------
+    FOOTER
+---------------*/
