@@ -23,17 +23,18 @@
 ---------------*/
 
 main{
-    max-width: 1440px;
     height: calc(100vh - 90px);
 }
 
 .main-container{
-    width: 100%;
+    /* width: 100%; */
     display: flex;
 }
 
 .wrap{
-    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    background-color: green;
 }
 
 /*---------------
@@ -45,7 +46,7 @@ aside{
     padding: 20px;
     height: calc(100vh - 90px);
     overflow-y: hidden;
-    /* width: 300px; */
+    width: 300px;
 }
 
 .aside-container{
@@ -153,7 +154,7 @@ aside{
 ---------------*/
 
 #upgrade{
-    width: 100%;
+    /* width: 100%; */
     background-color: #080b12;
     padding-top: 20px;
     padding-bottom: 30px;
@@ -174,7 +175,7 @@ aside{
 ---------------*/
 
 #front-page{
-    width: 100%;
+    /* width: 100%; */
     background-color: #141922;
 }
 
@@ -212,6 +213,10 @@ footer{
 
     aside{
         width: 90px;
+    }
+
+    .aside-container{
+        padding-right: 0px;
     }
 
     .big-logo{
