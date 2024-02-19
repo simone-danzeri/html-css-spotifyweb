@@ -8,6 +8,17 @@
 }
 
 /*---------------
+    TYPOGRAPHY
+---------------*/
+.white{
+    color: #fff;
+}
+
+.light-grey{
+    color: #6d6d6d;
+}
+
+/*---------------
     MAIN
 ---------------*/
 
@@ -26,11 +37,11 @@ main{
 aside{
     background-color: black;
     padding: 20px;
-    width: 500px;
+    /* width: 500px; */
 }
 
 .logo img{
-    width: 40%;
+    width: 100%;
     
 }
 
@@ -45,17 +56,41 @@ aside{
 }
 
 .home-list span{
-    color: #fff;
     padding-left: 10px;
 }
 
 .home-list ul li{
     display: flex;
     align-items: center;
+    padding: 5px 0px;
 }
 
 .home-list img{
-    width: 7%;
+    width: 20%;
+}
+
+.add-playlist{
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    padding-bottom: 24px;
+}
+.add-playlist i{
+    font-size: 40px;
+}
+
+.playlist-container span{
+    padding: 0px 10px;
+    font-size: 18px;
+}
+
+.playlist-container ul{
+    list-style: none;
+}
+
+.playlist-container ul li{
+    padding: 14px 0px;
 }
 
 /*---------------
