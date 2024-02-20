@@ -69,19 +69,24 @@ main{
 
 aside{
     background-color: black;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 50px;
     height: calc(100vh - 90px);
     width: 300px;
+    display: flex;
+    flex-direction: column;
     flex-shrink: 0;     /* mi evita il collasso del aside */
 }
 
-.aside-container{
+/* .aside-container{
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: space-between;
     padding-right: 50px;
-}
+} */
 
 .small-logo{
     display: none;
@@ -116,7 +121,7 @@ aside{
     width: 20%;
 }
 
-.playlist-container h3{
+.playlist-title h3{
     padding: 20px 0px;
 }
 
@@ -131,11 +136,12 @@ aside{
     font-size: 40px;
 }
 
-.playlist-container{
+.playlist{
+    flex-grow: 1;
     overflow-y: auto;
 }
 
-.playlist-container span{
+.playlist-title span{
     padding: 0px 10px;
     font-size: 18px;
 }
@@ -146,7 +152,7 @@ aside{
     overflow-y: auto;
 }
 
-.playlist-container ul li{
+.playlist li{
     padding: 14px 0px;
 }
 
@@ -303,10 +309,7 @@ footer{
 
     aside{
         width: 90px;
-    }
-
-    .aside-container{
-        padding-right: 0px;
+        padding: 10px;
     }
 
     .big-logo{
@@ -318,6 +321,10 @@ footer{
     }
 
     .home-list span{
+        display: none;
+    }
+
+    .playlist-title{
         display: none;
     }
 
