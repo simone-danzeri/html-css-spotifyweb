@@ -55,15 +55,11 @@ main{
     padding: 0px 10px;
 }
 
-.recently-played{
+.recently-played , .suggestions , .popular-artist{
     padding: 0px 20px;
 }
 
-.suggestions{
-    padding: 0px 20px;
-}
-
-.recently-played .col , .suggestions .col{
+.recently-played .col , .suggestions .col , .popular-artist .col{
     width: calc(100% / 6);
 }
 
@@ -257,7 +253,9 @@ FRONT PAGE
     padding-bottom: 20px;
 }
 
-.suggestions .col 
+.popular-artist img{
+    clip-path: circle()
+}
 
 /*---------------
     FOOTER
@@ -279,6 +277,10 @@ footer{
     .suggestions .col{
         width: calc(100% /4);
     }
+
+    .popular-artist .col{
+        width: calc(100% /4);
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -291,6 +293,9 @@ footer{
         width: 50%;
     }
     
+    .popular-artist .col{
+        width: 50%;
+    }
 
 }
 
