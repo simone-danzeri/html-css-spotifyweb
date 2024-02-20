@@ -41,6 +41,7 @@ main{
 .wrap{
     flex-grow: 1;
     background-color: green;
+    /* height: 100%; */
 }
 
 .row{
@@ -57,7 +58,12 @@ main{
 .recently-played{
     padding: 0px 20px;
 }
-.recently-played .col{
+
+.suggestions{
+    padding: 0px 20px;
+}
+
+.recently-played .col , .suggestions .col{
     width: calc(100% / 6);
 }
 
@@ -237,13 +243,24 @@ FRONT PAGE
     padding-left: 20px;
 }
 
-.recently-played .col h3{
+.recently-played .col h3 , .suggestions .col h3{
     padding-bottom: 10px;
     padding-top: 20px;
 }
 
+.recently-played .col p{
+    padding-bottom: 15px;
+}
+
+.p-suggest{
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.suggestions .col 
+
 /*---------------
-FOOTER
+    FOOTER
 ---------------*/
 footer{
     height: 90px;
@@ -255,10 +272,26 @@ footer{
 
 @media screen and (max-width: 1100px) {
     
+    .recently-played .col{
+        width: calc(100% /4);
+    }
+
+    .suggestions .col{
+        width: calc(100% /4);
+    }
 }
 
 @media screen and (max-width: 700px) {
     
+    .recently-played .col{
+        width: 50%;
+    }
+
+    .suggestions .col{
+        width: 50%;
+    }
+    
+
 }
 
 @media screen and (max-width: 600px) {
