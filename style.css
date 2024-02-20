@@ -35,6 +35,21 @@ main{
     background-color: green;
 }
 
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+.col{
+    padding: 0px 30px;
+}
+
+.recently-played .col{
+    width: calc(100% / 6);
+}
+
 /*---------------
     ASIDE
 ---------------*/
@@ -43,7 +58,6 @@ aside{
     background-color: black;
     padding: 20px;
     height: calc(100vh - 90px);
-    overflow-y: hidden;
     width: 300px;
     flex-shrink: 0;     /* mi evita il collasso del aside */
 }
@@ -89,6 +103,10 @@ aside{
     width: 20%;
 }
 
+.playlist-container h3{
+    padding: 20px 0px;
+}
+
 .add-playlist{
     display: flex;
     align-items: center;
@@ -100,13 +118,19 @@ aside{
     font-size: 40px;
 }
 
+.playlist-container{
+    overflow-y: auto;
+}
+
 .playlist-container span{
     padding: 0px 10px;
     font-size: 18px;
 }
 
 .playlist-container ul{
+    flex-grow: 1;
     list-style: none;
+    overflow-y: auto;
 }
 
 .playlist-container ul li{
@@ -116,6 +140,7 @@ aside{
 .profile{
     display: flex;
     flex-direction: column;
+    margin-top: auto;
 }
 
 .app-installer{
@@ -168,8 +193,9 @@ aside{
     border-radius: 25px;
 }
 
+
 /*---------------
-    FRONT PAGE
+FRONT PAGE
 ---------------*/
 
 #front-page{
@@ -194,8 +220,16 @@ aside{
     padding: 20px 15px;
 }
 
+#front-page h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+
+
 /*---------------
-    FOOTER
+FOOTER
 ---------------*/
 footer{
     height: 90px;
