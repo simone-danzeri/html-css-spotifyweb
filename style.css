@@ -32,6 +32,7 @@ main{
 
 .main-container{
     display: flex;
+    height: 100%;
 }
 
 .center{
@@ -45,7 +46,8 @@ main{
 }
 
 .wrap-container{
-    /* overflow-y: visible; */
+    height: 100%;
+    background-color: #141922;
 }
 
 .row{
@@ -279,6 +281,78 @@ footer{
     left: 0;
 }
 
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    padding: 10px;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+}
+
+.title img{
+    width: 40px;
+    height: 40px;
+}
+
+.song-title{
+    margin: auto 0;
+    padding: 0px 12px;   
+}
+
+.title span{
+    padding-left: 100px;
+}
+
+.player-commands{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.player-commands i{
+    padding: 0px 20px;
+    font-size: 25px;
+}
+
+.player-bar{
+    display: flex;
+    align-items: center;
+}
+
+.progress-bar {
+    width: 300px;
+    height: 3px;
+    background-color: #6d6d6d;
+    border-radius: 10px;
+  }
+  
+.progress {
+    height: 100%;
+    width: 50%;
+    background-color: #c1c1c1;
+}
+
+.player-bar span{
+    padding: 8px 40px;
+}
+
+.commands{
+    display: flex;
+    align-items: center;
+}
+
+.commands i{
+    padding: 0px 10px;
+}
+
+.volume{
+    width: 100px;
+}
+
 /*---------------
     RESPONSIVE
 ---------------*/
@@ -296,6 +370,39 @@ footer{
     .popular-artist .col{
         width: calc(100% /4);
     }
+
+    .title span{
+        padding-left: 60px;
+    }
+
+    .progress-bar{
+        width: 225px;
+    }
+
+    .volume{
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 850px){
+
+    .title span{
+        padding-left: 30px;
+    }
+
+    .player-commands i{
+        padding: 0px 10px;
+        font-size: 25px;
+    }
+
+    .player-bar span{
+        padding: 8px 10px;
+    }
+
+    .commands i{
+        padding: 0px 5px;
+    }
+    
 }
 
 @media screen and (max-width: 700px) {
@@ -312,6 +419,17 @@ footer{
         width: 50%;
     }
 
+    .title span{
+        padding-left: 40px;
+    }
+
+    .progress-bar{
+        width: 150px;
+    }
+
+    .volume{
+        width: 50px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -365,5 +483,22 @@ footer{
     .user img{
         width: 100%;
         margin: 0 auto;
+    }
+
+    .title span{
+        padding-left: 15px;
+    }
+
+    .player-commands i{
+        padding: 0px 10px;
+        font-size: 25px;
+    }
+
+    .progress-bar{
+        width: 100px;
+    }
+
+    .volume{
+        width: 60px;
     }
 }
