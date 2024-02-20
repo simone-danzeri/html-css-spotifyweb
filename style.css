@@ -269,6 +269,10 @@ FRONT PAGE
     padding-bottom: 20px;
 }
 
+.popular-artist{
+    padding-bottom: 20px;
+}
+
 .popular-artist img{
     clip-path: circle()
 }
