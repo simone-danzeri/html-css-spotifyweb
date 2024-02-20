@@ -31,7 +31,6 @@ main{
 }
 
 .wrap{
-    display: flex;
     flex-grow: 1;
     background-color: green;
 }
@@ -46,6 +45,7 @@ aside{
     height: calc(100vh - 90px);
     overflow-y: hidden;
     width: 300px;
+    flex-shrink: 0;     /* mi evita il collasso del aside */
 }
 
 .aside-container{
@@ -173,20 +173,26 @@ aside{
 ---------------*/
 
 #front-page{
-    display: flex;
+    /* display: flex; */
     background-color: #141922;
 }
 
-/* .genre ul{
+.genre{
+    display: flex;
+    justify-content: center;
+}
+
+.genre ul{
     display: flex;
     justify-content: center;
     list-style: none;
-} */
+    flex-wrap: wrap;
+}
 
-/* #front-page ul li{
+#front-page ul li{
     font-size: 14px;
     padding: 20px 15px;
-} */
+}
 
 /*---------------
     FOOTER
