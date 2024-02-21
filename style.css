@@ -69,6 +69,7 @@ main{
     width: calc(100% / 6);
 }
 
+
 /*---------------
     ASIDE
 ---------------*/
@@ -203,7 +204,7 @@ aside{
 ---------------*/
 
 #upgrade{
-    background-color: #080b12;
+    background-color: rgba(8, 11, 18, 0.7);
     padding-top: 20px;
     padding-bottom: 30px;
     padding-right: 20px;
@@ -213,6 +214,7 @@ aside{
     top: 0;
     right: 0;
     width: 100%;
+    z-index: 100;
 }
 
 #upgrade button{
@@ -263,6 +265,12 @@ FRONT PAGE
     display: block;
 }
 
+.popular-artist .album-image{
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
 .album-image-hover{
     display: flex;
     position: absolute;
@@ -276,6 +284,7 @@ FRONT PAGE
     align-items: center;
     opacity: 0;
 }
+
 
 .album-image-hover i{
     font-size: 60px;
@@ -303,9 +312,10 @@ FRONT PAGE
     padding-bottom: 20px;
 }
 
-.popular-artist img{
-    clip-path: circle()
+.popular-artist h3{
+    padding: 14px 0px;
 }
+
 
 /*---------------
     FOOTER
