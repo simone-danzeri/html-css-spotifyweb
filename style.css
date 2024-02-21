@@ -95,6 +95,22 @@ aside{
     padding-right: 50px;
 } */
 
+.home-list li{
+    border-left: 1px solid transparent;
+}
+
+.home-list li:hover{
+    border-left: 1px solid lime;
+}
+
+.home-list li span:hover{
+    color: #fff;
+}
+
+.playlist li:hover{
+    color: #fff;
+}
+
 .small-logo{
     display: none;
     max-width: 100%;
@@ -255,6 +271,15 @@ FRONT PAGE
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
+}
+
+.genre ul li{
+    border-bottom: 1px solid transparent;
+}
+
+.genre ul li:hover{
+    color: #fff;
+    border-bottom: 1px solid lime;
 }
 
 .album{
